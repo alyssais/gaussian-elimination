@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Guassian Elimination</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="card" id="solution">
+	
+	<div class="obverse">
+		<div class="input">
+			<table id="input-table">
+				<thead>
+					<tr>
+						<th>x</th>
+						<th>y</th>
+						<th>z</th>
+						<th>=</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="number" value="1"></td>
+						<td><input type="number" value="-1"></td>
+						<td><input type="number" value="2"></td>
+						<td><input type="number" value="15"></td>
+					</tr>
+					<tr>
+						<td><input type="number" value="3"></td>
+						<td><input type="number" value="2"></td>
+						<td><input type="number" value="-1"></td>
+						<td><input type="number" value="-8"></td>
+					</tr>
+					<tr>
+						<td><input type="number" value="2"></td>
+						<td><input type="number" value="1"></td>
+						<td><input type="number" value="1"></td>
+						<td><input type="number" value="3"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button type="button" id="calculate-button">Calculate</button>
+		</div>
+	</div>
+
+	<div class="reverse">
+		<div class="output">
+			<div class="values">
+				<span id="x"></span>
+				<span id="y"></span>
+				<span id="z"></span>
+			</div>
+			<table id="output-table">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+
+			<button type="button" id="reset-button">Reset</button>
+		</div>
+	</div>
+
+	<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+	<script src="bigrat.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

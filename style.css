@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-perspective: 800px;
+}
+
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+math {
+	font-family: inherit;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 16px;
+	font-size: 3em;
+}
+
+input, button {
+	display: block;
+	width: 100%;
+	font-family: inherit;
+	font-size: 1em;
+	border: none;
+	text-align: inherit;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+thead {
+	font-family: "Cambria Math";
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.5em;
+}
+
+td, input {
+	height: 2em;
+}
+
+button {
+	background: #90ee90;
+	color: white;
+	padding: 0.5em;
+	margin: 1em 0;
+	border-radius: 0.5em;
+	font-size: 2em;
+}
+
+.card {
+	position: relative;
+	-webkit-transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+}
+
+.flipped, .reverse {
+	-webkit-transform: rotateY(180deg);
+}
+
+.obverse, .reverse {
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+}
+
+.values {
+	font-size: 1.5em;
+	margin: 0 0 1rem;
+	font-family: "Cambria Math";
+	font-weight: bold;
+}
+
+.values:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.values [id] {
+	width: 33.33333%;
+	float: left;
+}
